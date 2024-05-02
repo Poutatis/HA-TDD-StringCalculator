@@ -13,7 +13,7 @@ public class StringCalculatorCLITests {
         StringCalculatorCLI calculator = new StringCalculatorCLI(inputStream, outputStream);
         calculator.run();
 
-        assertEquals("0" + System.lineSeparator() + "Exiting..." + System.lineSeparator(), outputStream.toString());
+        assertEquals("Welcome to String Calculator!" + System.lineSeparator() + "Please enter numbers to calculate (type 'exit' to quit):" + System.lineSeparator() + "The result is: " +"0" + System.lineSeparator() +"Please enter numbers to calculate (type 'exit' to quit):" + System.lineSeparator() + "Exiting..." + System.lineSeparator(), outputStream.toString());
     }
 
     @Test
@@ -27,6 +27,6 @@ public class StringCalculatorCLITests {
         StringCalculatorCLI calculator = new StringCalculatorCLI();
         calculator.run();
 
-        assertEquals("0" + System.lineSeparator() + "Exiting..." + System.lineSeparator(), outputStream.toString());
+        assertEquals("Welcome to String Calculator!" + System.lineSeparator() + "Please enter numbers to calculate (type 'exit' to quit):" + System.lineSeparator() + "The result is: " +"0" + System.lineSeparator() +"Please enter numbers to calculate (type 'exit' to quit):" + System.lineSeparator() + "Exiting..." + System.lineSeparator(), outputStream.toString());
     }
 }
